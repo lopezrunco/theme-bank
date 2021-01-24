@@ -888,6 +888,7 @@ cite {
 
 .blog-post-thumb img {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 /* contact page*/
@@ -1576,4 +1577,12 @@ footer .bottom-4 {
     text-decoration: none;
   }
 
+}
+
+@media (max-width: 380px) {
+
+  /* brands*/
+  #brands {
+    display: none;
+  }
 }
