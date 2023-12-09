@@ -16,12 +16,6 @@ This collection comprises themes developed for Creativo Multimedia web projects 
 - [ ] industry (industry-onepage)
 - [ ] codigo (codigo-web)
 - [ ] const (construction-web)
-- [ ] Task 4
-- [ ] Task 4
-- [ ] Task 4
-- [ ] Task 4
-- [ ] Task 4
-- [ ] Task 4
 
 ## Prerequisites
 
