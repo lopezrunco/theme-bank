@@ -14,7 +14,7 @@ This collection comprises themes developed for Creativo Multimedia web projects 
 - [ ] viri (maquetado-css-grid-2)
 - [ ] mk-mony (business-web)
 - [ ] industry (industry-onepage)
-- [ ] codigo (codigo-web)
+- [X] codigo
 - [ ] const (construction-web)
 
 ## Prerequisites
