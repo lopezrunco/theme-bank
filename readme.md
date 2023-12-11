@@ -10,7 +10,7 @@ This collection comprises themes developed for Creativo Multimedia web projects 
 - [ ] professional-profile (demo-CV) 
 - [ ] radio (flexbox-grid)
 - [ ] agever (Web-sass)
-- [ ] corporate (corporation-web)
+- [X] corporate
 - [ ] viri (maquetado-css-grid-2)
 - [ ] mk-mony (business-web)
 - [ ] industry (industry-onepage)
