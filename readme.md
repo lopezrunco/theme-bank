@@ -15,6 +15,7 @@ This collection comprises themes developed for Creativo Multimedia web projects 
 - [ ] mk-mony (business-web)
 - [ ] industry (industry-onepage)
 - [X] codigo
+- [X] wave
 - [ ] const (construction-web)
 
 ## Prerequisites
