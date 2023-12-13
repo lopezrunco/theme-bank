@@ -3,7 +3,7 @@
 $contact_info = [
     [
         'icon' => 'fa fa-map-marker icon',
-        'info' => ['Road to Obelisco', 'Big Sarandi', 'Florida, Uruguay']
+        'info' => ['Road to Obelisco', 'Florida, Uruguay']
     ],
     [
         'icon' => 'fa fa-phone icon',
