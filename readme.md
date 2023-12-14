@@ -7,7 +7,7 @@ This collection comprises themes developed for Creativo Multimedia web projects 
 - [x] coffee-shop
 - [ ] educational (educational-web)
 - [ ] food-company (take-care)
-- [ ] professional-profile (demo-CV) 
+- [X] professional-profile
 - [ ] radio (flexbox-grid)
 - [ ] agever (Web-sass)
 - [X] corporate
