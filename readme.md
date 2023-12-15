@@ -8,7 +8,7 @@ This collection comprises themes developed for Creativo Multimedia web projects 
 - [ ] educational (educational-web)
 - [ ] food-company (take-care)
 - [X] professional-profile
-- [ ] radio (flexbox-grid)
+- [X] radio
 - [ ] agever (Web-sass)
 - [X] corporate
 - [ ] viri (maquetado-css-grid-2)

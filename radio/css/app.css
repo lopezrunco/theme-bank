@@ -1,0 +1,698 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+/* GLOBAL STYLES -------------------------------------------------------------------------- */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #292929;
+  overflow-y: scroll;
+  background: #fff;
+}
+
+input:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+a:hover {
+  color: #0a548c;
+}
+
+a:focus {
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+.agro .sec-content .box h2 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #292929;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #fff;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: #0a548c;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+h5 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1.3rem;
+  margin: 10px 0 15px;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #292929;
+}
+
+.main-wrapper {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.content-wrap {
+  width: 98%;
+  max-width: 1140px;
+  margin: 0 auto;
+  float: none !important;
+}
+
+/* CUSTOM STYLES -------------------------------------------------------------------------- */
+
+/* HEADER STYLES -------------------------------------------------------------------------- */
+
+/* Top section */
+
+.top-section {
+  padding: 15px 0;
+  border-bottom: 1px solid #ececec;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.top-section > .top-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Logo & Live radio */
+
+.logo-live-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Desktop Nav section */
+
+.navbar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #292929;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.navbar nav a {
+  color: #fff;
+}
+
+.navbar nav a:hover {
+  color: #008ac9;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+/* MAIN STYLES -------------------------------------------------------------------------- */
+
+/* Main news section */
+.news {
+  margin: 20px 0;
+}
+
+.news.news-item-main a.new-img,
+.news.news-item-aside a.new-img,
+.columns a.new-img {
+  margin-bottom: 10px;
+}
+
+.news.news-item-main a.new-img:hover,
+.news.news-item-aside a.new-img:hover,
+.sec-news .new-box a.new-img:hover,
+.columns a.new-img:hover,
+.agro .main-content a.main-new-img:hover,
+.agro .sec-content a.new-img:hover {
+  opacity: 0.9;
+}
+
+.news.news-item-main a.new-img {
+  height: 400px;
+  width: 100%;
+  display: block;
+}
+
+.news.news-item-aside:first-child {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+
+.news.news-item-aside a.new-img {
+  height: 200px;
+  width: 100%;
+  display: block;
+}
+
+.news.news-item-main a.new-img {
+  background: url(../img/uriarte.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news.news-item-aside:first-child a.new-img {
+  background: url(../img/candado.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news.news-item-aside:last-child a.new-img {
+  background: url(../img/gandini.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news .category,
+.sec-news .new-desc .category,
+.agro .category {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: #b5b3b3;
+}
+
+.news .category::before,
+.sec-news .new-desc .category::before,
+.agro .category::before {
+  content: " ";
+  background: #008ac9;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.news.news-item-main h2,
+.agro .main-content h2 {
+  font-size: 2.2rem;
+}
+
+/* Secondary news section */
+
+.sec-news {
+  padding-bottom: 30px;
+  margin: 30px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.sec-news .new-box {
+  height: 300px;
+  width: 100%;
+}
+
+.sec-news .new-box a.new-img {
+  width: 100%;
+  height: 150px;
+  display: block;
+}
+
+.sec-news > .row > div:nth-child(1) .new-box a.new-img {
+  background: url(../img/sec-1.jpeg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sec-news > .row > div:nth-child(2) .new-box a.new-img {
+  background: url(../img/sec-2.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sec-news > .row > div:nth-child(3) .new-box a.new-img {
+  background: url(../img/sec-3.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sec-news > .row > div:nth-child(4) .new-box a.new-img {
+  background: url(../img/sec-4.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sec-news .new-box .new-desc {
+  background: #0a548c;
+  color: #fff;
+  height: 150px;
+  padding: 15px 10px;
+}
+
+.sec-news .new-box .new-desc h3 a {
+  color: #fff;
+}
+
+/* Social & ads section */
+.social {
+  margin-bottom: 10px;
+}
+
+.social img {
+  height: 100px;
+  width: auto;
+}
+
+.ads {
+  margin: 10px 0;
+}
+
+.ads img {
+  width: 100%;
+}
+
+/* Columnas section */
+
+.columns {
+  margin: 30px 0;
+}
+
+.columns .title {
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 15px;
+}
+
+.columns a.new-img {
+  width: 100%;
+  height: 200px;
+  display: block;
+  margin-top: 10px;
+}
+
+.columns .row > div:nth-child(1) a.new-img {
+  background: url(../img/col-1.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.columns .row > div:nth-child(2) a.new-img {
+  background: url(../img/col-2.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.columns .row > div:nth-child(3) a.new-img {
+  background: url(../img/col-3.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Agronegocios section */
+
+.agro {
+  background: #eeeeee;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 30px;
+}
+
+.agro .title {
+  background: #75bc62;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.agro .main-content {
+  padding-left: 15px;
+}
+
+.agro .sec-content {
+  padding-right: 15px;
+}
+
+.agro .main-content a.main-new-img,
+.agro .sec-content a.new-img {
+  margin-bottom: 15px;
+}
+
+.agro .main-content a.main-new-img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background: url(../img/agro-1.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.agro .sec-content a.new-img {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+.agro .sec-content > div:nth-child(1) a.new-img {
+  background: url(../img/agro-2.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.agro .sec-content > div:nth-child(2) a.new-img {
+  background: url(../img/agro-3.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.agro .sec-content > div:nth-child(3) a.new-img {
+  background: url(../img/agro-4.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.agro .sec-content > div:nth-child(4) a.new-img {
+  background: url(../img/agro-5.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.agro .category::before {
+  background: #75bc62;
+}
+
+/* FOOTER STYLES -------------------------------------------------------------------------- */
+
+footer {
+  background: #008ac9;
+  color: #fff;
+  padding: 30px 0;
+}
+
+footer a,
+footer p {
+  color: #fff;
+}
+
+footer .social-links {
+  margin: 25px 0;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+footer .social-links a {
+  margin-right: 20px;
+}
+
+footer .about-us .list,
+footer .contact-info .list {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .about-us .list a,
+footer .contact-info .list a {
+  padding: 15px 0;
+  border-bottom: 1px solid #ffffff2e;
+  font-size: 0.9rem;
+}
+
+footer .about-us .list a:last-child,
+footer .contact-info .list a:last-child {
+  border-bottom: none;
+}
+
+footer .contact-info .list i {
+  font-size: 1.3rem;
+  width: 30px;
+}
+
+footer .app {
+  width: 100%;
+  height: auto;
+}
+
+footer .app img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer .legal-info {
+  border-top: 1px solid #ffffff69;
+  text-align: center;
+}
+
+/* Mobile navigation */
+.navigation {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 59%;
+  bottom: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.979);
+  opacity: 0;
+  transition: ease-in-out 0.25s;
+}
+
+.navigation.active {
+  bottom: 0;
+  opacity: 1;
+}
+
+.navigation nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.navigation nav a {
+  margin: 10px 0;
+}
+
+/*TOOGLE ---------------------------------------------------------------------------------------- */
+
+.toggle {
+  background: url(../img/menu.png);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  /* position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color) url(../images/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 20;
+    cursor: pointer; */
+}
+
+.toggle.active {
+  background: url(../img/close.png);
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* MEDIA QUIERIES -------------------------------------------------------------------------- */
+
+@media (max-width: 1025px) {
+  .top-section {
+    display: none;
+  }
+
+  .logo-live-section {
+    flex-direction: column;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .content-wrap {
+    width: 94%;
+  }
+
+  header .content-wrap {
+    width: 96%;
+  }
+
+  .news .category::before,
+  .sec-news .new-desc .category::before,
+  .agro .category::before {
+    display: none;
+  }
+
+  .news.news-item-main a.new-img {
+    height: 300px;
+  }
+
+  .news.news-item-aside a.new-img {
+    height: 140px;
+  }
+
+  .sec-news {
+    padding-bottom: 10px;
+  }
+
+  .sec-news .new-box {
+    margin-bottom: 15px;
+  }
+
+  .social img {
+    width: 100%;
+    height: auto;
+  }
+
+  .columns a.new-img {
+    height: 130px;
+  }
+
+  .agro .sec-content {
+    margin-top: 30px;
+  }
+
+  .agro .main-content a.main-new-img {
+    width: 98%;
+    height: 400px;
+  }
+
+  .agro .sec-content a.new-img {
+    height: 180px;
+  }
+
+  .ads .row > div {
+    width: 100%;
+  }
+
+  .agro .sec-content .box h2 {
+    margin: 10px 0 30px;
+  }
+
+  footer .row > div {
+    margin-bottom: 30px;
+  }
+
+  footer .legal-info > div {
+    margin: 0;
+  }
+
+  .mobile-navbar {
+    display: flex;
+    justify-content: center;
+    background: #292929;
+    text-align: center;
+  }
+
+  .mobile-navbar a {
+    color: #fff;
+  }
+}
+
+@media (max-width: 420px) {
+  header .content-wrap {
+    width: 100%;
+  }
+
+  .logo {
+    overflow: hidden;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .news.news-item-main a.new-img {
+    height: 230px;
+  }
+
+  .news.news-item-aside a.new-img {
+    height: 200px;
+  }
+
+  .news.news-item-aside:first-child {
+    border-bottom: none;
+  }
+
+  .social .row > div {
+    width: 100%;
+  }
+
+  .columns a.new-img {
+    height: 200px;
+  }
+
+  .agro .main-content a.main-new-img {
+    width: 96%;
+  }
+
+  .agro .sec-content a.new-img {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .agro {
+    background: #fff;
+  }
+
+  footer .content-wrap {
+    width: 85%;
+  }
+}
