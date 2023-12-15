@@ -38,7 +38,7 @@ Follow these steps to get the landing page running on your local machine:
    ```
 
 3. **Compile SASS to CSS:**
-   If you haven't already set up automatic SASS compilation, compile the SASS files to CSS using your preferred method or run:
+   If the project is using SASS, you will need to compile the SASS files to CSS using your preferred method or run:
    ```bash
    sass scss/input.scss css/output.css
    ```
