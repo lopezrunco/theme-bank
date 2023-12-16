@@ -5,7 +5,7 @@ This collection comprises themes developed for Creativo Multimedia web projects 
 ## Projects included
 
 - [x] coffee-shop
-- [ ] educational (educational-web)
+- [X] educational
 - [ ] food-company (take-care)
 - [X] professional-profile
 - [X] radio

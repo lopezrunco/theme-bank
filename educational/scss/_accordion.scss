@@ -1,0 +1,184 @@
+// Accordion Home page
+.accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        text-align: center;
+    }
+
+    .accordion-container {
+        max-width: 800px;
+
+        .accordion-item {
+            position: relative;
+            margin: 10px 20px;
+            @include border-radius(2px);
+            border: 1px solid $colorPrimary;
+
+            .title {
+                position: relative;
+                padding: 10px;
+                background: $colorPrimary;
+                cursor: pointer;
+                @include transition(ease-in-out, .2s);
+
+                // Effect in hover item
+                &:hover {
+                    background: darken($color: $colorPrimary, $amount: 10);
+                }
+
+                // + default symbol on all titles
+                &::before {
+                    content: '+';
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    @include transform-translateY(-50%);
+                    font-size: 1.5em;
+                    color: #fff;
+                }
+
+                h3 {
+                    color: #fff;
+                    margin-bottom: 0;
+                    font-size: 1.0em;
+                }
+            }
+        }
+
+        // Effect in active item
+        &.active {
+            background: darken($color: $colorPrimary, $amount: 10);
+        }
+
+        // Content styles
+        .content {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            @include transitionSecs(0.5s);
+            overflow-y: auto;
+        }
+
+        // active styles
+        .active .content {
+            height: 350px;
+            padding: 30px;
+        }
+    }
+
+    .accordion-item.active .title::before {
+        content: '-';
+    }
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    .accordion .accordion-container .active .content {
+        height: 200px;
+    }
+}
+
+// Media queries > 1200 px
+@media screen and (min-width: 1200px) {
+    .accordion .accordion-container .active .content {
+        height: 230px;
+    }
+}
+
+// Accordion Instructors page
+body.instructors .accordion {
+    margin-bottom: 40px;
+
+    .accordion-container {
+        max-width: 100%;
+    }
+
+    .accordion-container .active .content {
+        height: 150px;
+        padding: 10px;
+    }
+
+    .accordion-item {
+        margin: 10px 0;
+        border: none;
+
+        .title {
+            background: none;
+            text-align: left;
+
+            &::before {
+                color: $colorPrimary;
+            }
+
+            &:hover {
+                background: none;
+            }
+
+            h3 {
+                color: $btnTextColor;
+                font-size: $font-16;
+            }
+
+            p {
+                font-size: 16px;
+                ;
+            }
+
+        }
+    }
+
+    .accordion-item.active .title h3 {
+        color: $colorPrimary;
+    }
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    body.instructors .accordion .accordion-item .title h3 {
+        font-size: $font-18;
+    }
+}
+
+// Media queries > 992 px
+@media screen and (min-width: 992px) {
+    body.instructors .accordion .accordion-container .active .content {
+        height: 90px;
+    }
+}
+
+// Media queries > 1200 px
+@media screen and (min-width: 1200px) {
+    body.instructors .accordion .accordion-container .active .content {
+        height: 140px;
+    }
+}
+
+// Accordion course item page
+.course-item {
+    .accordion .accordion-container .accordion-item {
+        margin: 10px 0px;
+
+        .title h3 {
+            font-size: $font-14;
+        }
+    }
+
+    .accordion .accordion-container .active .content {
+        height: 220px;
+    }
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    .course-item .accordion .accordion-container .accordion-item .title h3 {
+        font-size: $font-18;
+    }
+
+    .course-item .accordion .accordion-container .active .content {
+        height: 150px;
+    }
+
+}

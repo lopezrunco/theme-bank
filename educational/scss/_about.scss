@@ -1,0 +1,85 @@
+// About us Home page
+.about-us {
+    .content {
+        margin-bottom: 30px;
+    }
+
+    .img-wrap {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        @include transition(ease-in-out, .20s);
+        @include border-radius(2px);
+
+        img {
+            width: 100%;
+            height: 300px;
+            opacity: .8;
+            @include transition(ease-in-out, .20s);
+
+            &:hover {
+                @include transform-scale(1.1);
+                opacity: 1;
+            }
+
+        }
+
+    }
+}
+
+// Media queries < 576 px
+@media screen and (min-width: 576px) {
+    .img-wrap {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// About us About page
+.about-courses {
+    .content {
+
+        .btn-row {
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
+
+        .about-img {
+            height: 300px;
+            width: 100%;
+            background: url(../img/about-course.jpg);
+            @include bgSize(cover);
+            @include bgRepeat(no-repeat);
+            @include bgPosition(-50px, 0);
+            @include border-radius(2px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.178);
+        }
+    }
+}
+
+.benefits .title {
+    margin-bottom: 30px;
+
+    .btn {
+        margin: 0;
+    }
+}
+
+// Media queries < 768 px
+@media screen and (min-width: 768px) {
+    .about-courses .content .about-img {
+        height: 400px;
+        background-position: -200px;
+    }
+}
+
+// Media queries < 1200 px
+@media screen and (min-width: 1200px) {
+    .about-courses .content .about-img {
+        height: 300px;
+    background-position: -90px;
+    }
+}
+
+

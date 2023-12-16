@@ -1,0 +1,18 @@
+footer {
+    text-align: center;
+
+    p,
+    a {
+        display: inline-block;
+        font-size: $font-14;
+        color: lighten($color: $colorText, $amount: 20);
+        margin-bottom: 20px;
+    }
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    footer {
+        text-align: left;
+    }
+}

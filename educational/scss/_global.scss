@@ -1,0 +1,190 @@
+// Global styles
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+}
+
+#main-wrapper {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.content-wrap {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+    float: none !important;
+}
+
+.main-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    text-indent: -9999em;
+}
+
+header,
+main,
+section,
+article,
+footer {
+    position: relative;
+}
+
+// Sections
+
+section {
+    padding: 50px 0;
+}
+
+footer {
+    padding: 30px 0 10px;
+}
+
+section.benefits,
+section.instructors,
+section.testimonial,
+section.donate {
+    background: $bgColor2;
+}
+
+section.bottom {
+    background: darken($color: $bgColor2, $amount: 2);
+}
+
+footer {
+    background: darken($color: $bgColor2, $amount: 4);
+}
+
+// Colors
+
+.color-primary {
+    color: $colorPrimary;
+}
+
+.color-secondary {
+    color: $colorSecondary;
+}
+
+.span-color {
+    color: $spanColor;
+}
+
+// Text
+
+h2 {
+    font-size: $font-38;
+    font-weight: $weight-300;
+    line-height: 400;
+    line-height: 1.1em;
+}
+
+h3 {
+    font-size: $font-22;
+    color: $btnTextColor;
+    font-weight: $weight-700;
+    margin-bottom: 25px;
+    line-height: 1.2em;
+}
+
+h4 {
+    font-size: $font-btn;
+    color: $btnBorderColor;
+    font-weight: $weight-400;
+    margin-bottom: 5px;
+    line-height: 1.2em;
+}
+
+h6{
+    font-size: $font-30;
+    font-weight: $weight-300;
+    line-height: 400;
+    line-height: 1.1em;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: $font-text;
+    color: $colorText;
+    font-weight: $weight-300;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+}
+
+span {
+    font-size: $font-text;
+    margin-bottom: 20px;
+}
+
+// Buttons
+
+.btn {
+    font-size: $font-btn;
+    padding: 6px 0;
+    margin: 10px 20px 0 0;
+    display: inline-block;
+    @include transition(ease-in-out, .2s);
+
+    i {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
+
+.btn-primary {
+    color: $btnTextColor;
+    border-bottom: 2px solid $btnBorderColor;
+    @include transition(ease-in-out, .25s);
+
+    &:hover {
+        color: $colorPrimary;
+    }
+}
+
+.btn-secondary {
+    color: #fff;
+    background: $colorPrimary;
+    padding: 20px 40px;
+    @include border-radius(2px);
+    @include transition(ease-in-out, .25s);
+
+    &:hover {
+        background: lighten($color: $colorPrimary, $amount: 10);
+    }
+}
+
+.link {
+    margin-bottom: 30px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: $font-14;
+    color: #000;
+
+    i {
+        margin-left: 10px;
+    }
+}
+
+// Align
+
+.align-center {
+    text-align: center;
+}
+
+// List
+
+ul {
+    list-style: none;
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    section.bottom {
+        padding-bottom: 0;
+    }
+}
