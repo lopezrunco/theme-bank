@@ -9,14 +9,14 @@ This collection comprises themes developed for Creativo Multimedia web projects 
 - [X] take-care
 - [X] professional-profile
 - [X] radio
-- [ ] agever (Web-sass)
 - [X] corporate
-- [ ] viri (maquetado-css-grid-2)
-- [ ] mk-mony (business-web)
+- [X] viri
 - [X] industry
 - [X] codigo
 - [X] wave
 - [ ] const (construction-web)
+- [ ] mk-mony (business-web)
+- [ ] agever (Web-sass)
 
 ## Prerequisites
 
