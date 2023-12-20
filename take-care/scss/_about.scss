@@ -1,0 +1,111 @@
+/* About section styles */
+
+.about {
+  text-align: center;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+
+    .col-icons {
+      background: url(../img/col-arrow.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 40px 20px;
+      cursor: pointer;
+
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background: #fff;
+        padding: 20px;
+        box-shadow: 5px 5px 20px #00000021;
+        transition: ease-in-out 0.25s;
+
+        h5,
+        p {
+          transition: ease-in-out 0.25s;
+        }
+
+        &:hover,
+        &:active {
+          background: $primary-color;
+          color: #fff;
+
+          h5,
+          p {
+            color: #fff;
+          }
+        }
+
+        .out-circle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          background: lighten($color: $primary-color, $amount: 35);
+          border-radius: 50%;
+          width: 6rem;
+          height: 6rem;
+
+          .inner-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: $primary-color;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+
+            i {
+              color: #fff;
+              font-size: 2rem;
+            }
+          }
+        }
+
+        h5 {
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .col-content {
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .about .grid .col-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .about .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .about .grid .col-icons {
+    padding: 20px 20px;
+  }
+
+  .about .grid .col-icons .box h5 {
+    margin: 5px 0;
+  }
+
+  .about .grid .col-content h3 {
+    margin-bottom: 60px;
+  }
+}

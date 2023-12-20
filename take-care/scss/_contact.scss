@@ -1,0 +1,94 @@
+/* Contact section styles */
+
+.contact {
+  background: $light-bg;
+  text-align: center;
+  padding-bottom: 0;
+
+  .title {
+    background: url(../img/title-bg.png) center 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    .box {
+      background: url(../img/worn-bg.jpg) center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      padding: 40px 20px;
+      border-radius: 40px 0;
+      cursor: pointer;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: ease-in-out 0.25s;
+
+      &:hover,
+      &:active {
+        border-radius: 0 40px;
+      }
+
+      .icon-container {
+        width: 2rem;
+        height: 2rem;
+        background: #fff;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+
+        i {
+          color: $primary-color;
+          font-size: 2rem;
+          line-height: 4rem;
+        }
+      }
+
+      h4 {
+        margin: 10px 0;
+      }
+
+      p,
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .map {
+    background: $secondary-color;
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 370px) {
+  .contact .title {
+    background: url(../img/title-bg.png) center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .contact .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .contact .grid .box {
+    padding: 20px 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .contact .grid {
+    gap: 20px;
+  }
+}

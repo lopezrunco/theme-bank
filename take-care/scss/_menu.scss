@@ -1,0 +1,121 @@
+/* Menu styles */
+
+header {
+  display: flex;
+  height: 60px;
+  padding: 0 20px;
+  background: #fff;
+  border-bottom: 1px solid $border-color;
+}
+
+.menu-toggle {
+  display: block;
+  margin-left: auto;
+  color: var(--primary-black-color);
+  line-height: 60px;
+  font-size: 18px;
+  cursor: pointer;
+
+  i {
+    font-weight: 900;
+    padding: 20px 0px 20px 40px;
+  }
+}
+
+.logo a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.logo a img {
+  height: 100%;
+  width: 161px;
+  height: 59px;
+  padding: 17px 0;
+}
+
+#menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #fff;
+  overflow: hidden;
+  z-index: 999;
+  border-bottom: 1px solid $border-color;
+  transition: ease-out 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+#menu ul li {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid $border-color;
+}
+
+#menu ul li:last-child {
+  border-bottom: none;
+}
+
+#menu ul li a {
+  display: inline-block;
+  position: relative;
+  padding: 0 8px;
+  color: var(--primary-black-color);
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: ease-in-out 0.2s;
+  width: 100%;
+}
+
+#menu ul li a:hover,
+#menu ul li a:active {
+  color: $primary-color;
+}
+
+.show {
+  height: calc(100vh - 60px) !important;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  a {
+    font-size: 3rem;
+    opacity: 0.8;
+    margin: 0 10px;
+    transition: ease-in-out 0.25s;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+
+    &:nth-child(1) {
+      color: #3b5998; /* Facebook color */
+    }
+
+    &:nth-child(2) {
+      color: #c13584; /* Instagram color */
+    }
+
+    &:nth-child(3) {
+      color: #00acee; /* Twitter color */
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .show {
+    height: calc(70vh - 60px) !important;
+  }
+}

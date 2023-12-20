@@ -1,0 +1,64 @@
+/* Products styles */
+
+.products {
+  text-align: center;
+  background: $light-bg;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+
+    .item {
+      border: 1px solid $primary-color;
+      border-radius: 10px;
+      padding: 10px;
+      cursor: pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h4 {
+        color: $white-color;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: ease-in-out 0.25s;
+      }
+
+      &:hover h4,
+      &:active h4 {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @for $i from 1 through 6 {
+      .item:nth-child(#{$i}) {
+        $image-path: "../img/products-#{$i}.jpg";
+        background: url('#{$image-path}') center center/cover no-repeat;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 410px) {
+  .products .grid {
+    grid-template-rows: repeat(3, 180px);
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .products .grid {
+    grid-template-rows: repeat(2, 210px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .products .grid {
+    grid-template-rows: repeat(1, 170px);
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

@@ -1,0 +1,32 @@
+/* Featured section styles */
+
+.featured {
+  text-align: center;
+  color: $white-color;
+
+  .box {
+    background: url(../img/featured-bg.jpg) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    overflow: hidden;
+
+    h3 {
+      color: $white-color;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .featured .box {
+    background-attachment: fixed;
+  }
+
+  .featured-info {
+    font-size: 1.8rem;
+  }
+
+  .featured .box h3 {
+    font-size: 3rem;
+  }
+}

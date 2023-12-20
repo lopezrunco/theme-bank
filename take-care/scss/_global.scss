@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &::selection {
+    background-color: $primary-color;
+    color: $white-color;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $black-color;
+}
+
+#main-wrapper {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.content-wrap {
+  width: 92%;
+  max-width: 1140px;
+  margin: 0 auto;
+  float: none !important;
+}
+
+.title {
+  background: url(../img/title-bg.png) top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
+
+.main-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  text-indent: -9999em;
+}
+
+section {
+  padding: 80px 0;
+}
+
+h3,
+h5 {
+  color: $secondary-color;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+  line-height: 2.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: $text-color;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.primary {
+  color: $primary-color;
+}
+
+.featured-info {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hadwrite {
+  font-family: "Architects Daughter", cursive;
+  color: $primary-color;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.hadwrite::before,
+.hadwrite::after {
+  content: " ~ ";
+  position: relative;
+  top: 5px;
+}
+
+.separator {
+  height: 3px;
+  width: 20px;
+  display: block;
+  background: #f79023;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.overlay {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    32deg,
+    rgba(0, 0, 0, 0.5452556022408963) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 100%;
+  height: 100%;
+  padding: 40px 10px;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.btn-primary {
+  color: $white-color;
+  background: $primary-color;
+  transition: ease-in-out 0.25s;
+
+  &:hover,
+  &:active {
+    background: darken($color: $primary-color, $amount: 10);
+  }
+}
+
+.btn-outline {
+  border: 3px solid $primary-color;
+  color: $primary-color;
+  transition: ease-in-out 0.25s;
+
+  &:hover,
+  &:active {
+    background: $primary-color;
+    color: #fff;
+  }
+}
+
+.go-to-top {
+  position: fixed;
+  bottom: 70px;
+  right: 15px;
+  color: #fff;
+  background: #f79023;
+  padding: 6px 14px;
+  font-size: 25px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 7px #00000027;
+  opacity: 0.8;
+  transition: ease-in-out 0.25s;
+}
+
+.wapp-link {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  color: #fff;
+  background: #1ad03f;
+  padding: 6px 14px;
+  font-size: 25px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 7px #00000027;
+  opacity: 0.8;
+  transition: ease-in-out 0.25s;
+
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .title {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .overlay {
+    padding: 60px 10px;
+  }
+
+  .wapp-link {
+    right: 75px;
+  }
+
+  .go-to-top {
+    bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .content-wrap {
+    width: 98%;
+  }
+
+  .title {
+    width: 40%;
+    margin-bottom: 60px;
+  }
+
+  .hadwrite {
+    font-size: 1.4rem;
+  }
+}
