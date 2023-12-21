@@ -1,0 +1,114 @@
+.contact {
+  padding-bottom: 2rem;
+
+  .contact-form {
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+
+      label {
+        margin-bottom: 0.3rem;
+        color: $light-text-color;
+      }
+
+      input,
+      textarea {
+        border: 1px solid $light-text-color;
+        border-radius: $border-radius;
+        background: transparent;
+        color: $light-text-color;
+        width: 100%;
+        outline: none;
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+      }
+
+      .button {
+        color: $light-text-color;
+        border: none;
+        margin-bottom: 0;
+      }
+    }
+
+    .sended-msj-alert {
+      margin-top: 1rem;
+      display: none;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      color: $primary-color;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 4rem;
+
+    .social-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+
+      .item {
+        margin-right: 2rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      a {
+        transition: $main-transition;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .footer-menu {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      border-top: 1px solid #ffffff0d;
+      padding-top: 1rem;
+
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+// Media queries
+@media screen and (min-width: 768px) {
+  .contact {
+    background-image: url(../img/fullstack-developer-map-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    .contact-form {
+      form {
+        .sended-msj-alert {
+          margin-top: 0;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}

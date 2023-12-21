@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background-color: $primary-color;
+  color: $light-text-color;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $dark-bg-color;
+  color: $light-text-color;
+}
+
+footer {
+  padding: 1.5rem 0;
+  background-color: #202026;
+  border-top: 1px solid #188c911a;
+}
+
+.container {
+  max-width: 1100px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $light-text-color;
+}
+
+main {
+  padding-top: 4rem;
+  overflow: hidden;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+a {
+  display: inline-block;
+
+  &:hover {
+    color: $light-text-color;
+  }
+}
+
+.separator {
+  background-color: $primary-color;
+  height: 0.3rem;
+  width: 3rem;
+  margin: 1rem 0 2rem;
+  border-radius: $border-radius;
+}
+
+// Tags
+.tags {
+  span {
+    display: inline-block;
+    border: 1px solid $primary-color;
+    border-radius: $border-radius;
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.1rem 0.5rem;
+    color: $primary-color;
+    font-size: 0.8rem;
+  }
+}
+
+// Buttons
+.button {
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  background-color: $primary-color;
+  font-weight: 500;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+
+  &.hi-button {
+    border-bottom-left-radius: 0;
+  }
+}
+
+.back-link {
+  color: $primary-color;
+  transition: $main-transition;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+
+  i {
+    font-size: 1.3rem;
+  }
+}
+
+// Media queries
+// Fade animation on desktop devices
+@media screen and (min-width: 1024px) {
+  .back-link {
+    justify-content: flex-start;
+  }
+}
+
+// Headings
+h1.main-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  text-indent: -9999em;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+// Go to top
+#goToTop {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $primary-color;
+  font-size: 1.2rem;
+  background-color: $dark-bg-color;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $main-transition;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $light-text-color;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  .separator {
+    margin: 1rem auto 2rem;
+  }
+}
+
+.square-separator {
+  height: 2px;
+  width: 2px;
+  background: #188c91;
+  content: "";
+}
+
+.fadeElement {
+  opacity: 1;
+}
+
+// Fade animation on desktop devices
+@media screen and (min-width: 1024px) {
+  .fadeElement {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+}
