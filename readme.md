@@ -15,9 +15,6 @@ This collection comprises themes developed for Creativo Multimedia web projects 
 - [X] codigo
 - [X] wave
 - [X] darkdev
-- [ ] const (construction-web)
-- [ ] mk-mony (business-web)
-- [ ] agever (Web-sass)
 
 ## Prerequisites
 
