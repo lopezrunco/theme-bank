@@ -1,6 +1,6 @@
 ## Themes bank
 
-This collection comprises themes developed for Creativo Multimedia web projects between 2017 and 2020. These themes utilize web technologies such as PHP, JavaScript, and SASS.
+Collection of themes developed for Creativo Multimedia web projects. The objective was to establish a comprehensive collection of adaptable templates tailored to meet the needs of new clients.
 
 ## Projects included
 
